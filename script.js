@@ -109,7 +109,7 @@ function drawInfo() {
     const info = `세대: ${generation}<br>남은 먹이: ${foods.length}<br><br>` +
         species.map((creature, index) => {
             let colorName = creature.color === 'red' ? '빨강' : creature.color === 'blue' ? '파랑' : '초록';
-            return `종 ${index + 1} (${colorName}): 속도 ${creature.speed.toFixed(2)}, 먹은 개수 ${creature.eatenFood}`;
+            return `개체 ${index + 1} (${colorName}): 속도 ${creature.speed.toFixed(2)}, 먹은 개수 ${creature.eatenFood}`;
         }).join('<br>');
     document.getElementById('info').innerHTML = info;
 }
